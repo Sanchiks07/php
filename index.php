@@ -12,8 +12,8 @@ echo "yippee <br><br>";
 
 // izvadi visus pārā skaitļus no 1-100
 echo "<b>1. uzdevums</b><br>";
-for ($a = 2; $a <= 100; $a+=2) {
-    echo "$a <br>";
+for ($x = 2; $x <= 100; $x+=2) {
+    echo "$x <br>";
 }
 
 // while cikls
@@ -34,17 +34,27 @@ for ($a = 2; $a <= 100; $a+=2) {
 //faktoriāls 10
 //!3 = 3*2*1
 echo "<br><b>2. uzdevums</b><br>";
-$c = 1;
-for ($b = 1; $b <= 10; $b+=1) {
-    $c = $c*$b;
+$a = 1;
+for ($b = 1; $b <= 10; $b++) {
+    $a = $a*$b;
 }
-echo "$c <br><br>";
+echo "$a <br><br>";
 
 //saskaita visus naturālos skaitļus no 1 - 22
-$e = 0;
-for ($d = 1; $d <= 22; $d++) {
-    $e = $e + $d;
+$summa = 0;
+for ($i = 1; $i <= 22; $i++) {
+    $summa = $summa + $i;
 }
-echo "$e";
+echo "$summa";
+
+//izvada visus Fibonači skaitļus līdz 1000
+echo "<br><br><b>3. uzdevums</b><br>";
+$b_1 = 0;
+for ($b = 1; $b <= 1000; $b = $b + 0) {
+    echo "$b<br>";
+    $bPlus1 = $b_1 + $b;
+    $b_1 = $b;
+    $b = $bPlus1;
+}
 
 ?>
