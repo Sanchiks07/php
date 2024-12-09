@@ -66,4 +66,34 @@ for ($b = 1; $b <= 1000; $b = $b + 0) {
 //    $b = $bPlus1;
 //}
 
+
+//naturāli skaitļi no 1-100, kuri dalās ar 3 vai 5, bet nedalās ar 15
+echo "<br><br><b>4. uzdevums</b><br>";
+for ($n = 1; $n <= 100; $n = $n + 1) {
+    if (($n % 3 == 0 || $n % 5 == 0) && $n % 15 != 0) {
+        echo "$n" . " ";
+    }
+}
+
+//izveido asociatīvo masīvu, kurā atslēgas ir Latvijas pilsētu nosaukumi
+//bet vērtības ir to iedzīvotāju skaits
+//izvadi ar print_r funkciju
+echo "<br><br><b>5. uzdevums</b><br>";
+$pilsetas = ["cesis" => 14699, "smiltene" => 5129, "valmiera" => 22376];
+print_r ($pilsetas);
+
+//izvadi izmantojot array_keys funkciju
+echo "<br><br><b>6. uzdevums</b><br>";
+$animals = ["kaķis" => "mjau", "suns" => "vau", "putns" => "čiv"];
+print_r (array_keys($animals));
+
+//izsauc API https://jsonplaceholder.typicode.com/posts un iegūsti masīvus ar asociatīvajiem masīviem, kas satur informāciju par ziņojumiem
+//izvadiet katram ziņojumam tā nosaukumu, saturu un lietotāja ID, kas to ir izveidojis
+echo "<br><br><b>7. uzdevums</b><br>";
+$dataString = file_get_contents ("https://jsonplaceholder.typicode.com/posts");
+$posts = json_decode($dataString);
+var_dump ($posts[69]->title);
+
+//
+echo "<br><br><b>8. uzdevums</b><br>";
 ?>
