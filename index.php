@@ -94,6 +94,11 @@ $dataString = file_get_contents ("https://jsonplaceholder.typicode.com/posts");
 $posts = json_decode($dataString);
 var_dump ($posts[69]->title);
 
+foreach ($posts as $posts) { //iziet katram array elementam cauri
+    echo "<h2>$posts->title</h2>";
+    echo "$posts->body";
+};
+
 //
 echo "<br><br><b>8. uzdevums</b><br>";
 ?>
