@@ -13,7 +13,7 @@ echo "yippee <br><br>";
 // izvadi visus pārā skaitļus no 1-100
 echo "<b>1. uzdevums</b><br>";
 for ($x = 2; $x <= 100; $x+=2) {
-    echo "$x <br>";
+    echo "$x" . " ";
 }
 
 // while cikls
@@ -33,7 +33,7 @@ for ($x = 2; $x <= 100; $x+=2) {
 
 //faktoriāls 10
 //!3 = 3*2*1
-echo "<br><b>2. uzdevums</b><br>";
+echo "<br><br><b>2. uzdevums</b><br>";
 $a = 1;
 for ($b = 1; $b <= 10; $b++) {
     $a = $a*$b;
@@ -68,7 +68,7 @@ for ($b = 1; $b <= 1000; $b = $b + 0) {
 
 
 //naturāli skaitļi no 1-100, kuri dalās ar 3 vai 5, bet nedalās ar 15
-echo "<br><br><b>4. uzdevums</b><br>";
+echo "<br><b>4. uzdevums</b><br>";
 for ($n = 1; $n <= 100; $n = $n + 1) {
     if (($n % 3 == 0 || $n % 5 == 0) && $n % 15 != 0) {
         echo "$n" . " ";
